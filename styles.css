@@ -1,0 +1,14 @@
+body {
+    background-color: #eceeef;
+}
+
+.jumbotron {
+    position: absolute;
+    background-color: white;
+    border-radius: 80px; 
+    height: 512px;
+    width: 512px;
+    top: calc((100% - 512px) / 2);
+    left: calc((100% - 512px) / 2);
+    text-align: center;
+}
