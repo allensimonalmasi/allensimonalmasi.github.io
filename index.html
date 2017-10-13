@@ -1,62 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <meta name="description" content="Quick Budget Apps builds powerful Mobile Apps for small businesses at affordable prices.">
+    <meta name="author" content="Quick Budget Apps">
 
-    <title>Quick Budget Apps | Serving the "Little Guys"</title>
-
+    <title>Quick Budget Apps | Building Powerful Mobile Apps For Small Businesses</title>
+    
     <!-- Favicon -->
-    <link rel="icon" href="favicon.ico?v=2" />
+    <link rel="icon" href="favicon.ico?v=2"/>
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <!-- Third party scripts and styles -->
+    <link rel="stylesheet" href="third-party-styles-and-scripts/bootstrap.min.css">
+    <link rel="stylesheet" href="third-party-styles-and-scripts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="third-party-styles-and-scripts/jquery-3.1.1.js"></script>
+    <script src="third-party-styles-and-scripts/tether.min.js"></script>
+    <script src="third-party-styles-and-scripts/bootstrap.min.js"></script>
 
-    <!-- Custom styles for this template -->
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <!-- Styles -->
+    <link href="index.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
-  </head>
+</head>
 
-  <body>
-
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <img src="logo.png">
-        <p>We're doing some new things to our website that you'll love and will be back soon... If you're a Client and would like to login to use our services, just click on the button below! For all other inquiries, contact us by clicking below!</p>
-        <p><a class="btn btn-success btn-lg" href="http://myapp.quickbudgetapps.com" role="button">Login</a>&nbsp;<a class="btn btn-danger btn-lg" href="http://myapp.quickbudgetapps.com" role="button" data-toggle="modal" data-target="#exampleModal">Contact Us</a></p>
-      </div>
-    </div>
-      
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <ul>
-              <li><b>Address:</b> 4509 Eagle Rock Blvd, Los Angeles, CA, 90041</li>
-              <li><b>Telephone:</b> 818-940-1474</li>
-              <li><b>Sales:</b> sales@quickbudgetapps.com</li>
-              <li><b>Support:</b> support@quickbudgetapps.com</li>
-            </ul>  
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-toggleable-md navbar-light">
+        <!-- Responsive Menu Button -->
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-responsive" aria-controls="navbar-responsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html"><img id="navbar-brand-image" src="images/logo.png"></a>
+        
+        <!-- Navbar Items -->
+        <div class="collapse navbar-collapse" id="navbar-responsive">
+            <!-- Page Links -->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item hvr-underline-from-center"><a class="nav-link" href="features.html">Features</a></li>
+                <li class="nav-item hvr-underline-from-center"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                <li class="nav-item hvr-underline-from-center"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            
+            <!-- Login Button -->
+            <form class="form-inline">
+                <a class="btn btn-success" href="http://myapp.quickbudgetapps.com">Login</a>
+            </form>
         </div>
-      </div>
+    </nav>
+    
+    <!-- Header -->
+    <div id="header" class="container-fluid">
+        <!-- Header Content -->
+        <div class="container">
+            <div class="row">
+                <!-- Header Text -->
+                <div class="col-lg bounceInLeft" style="z-index: 300 !important">
+                    <!-- Vertical Align To Middle -->
+                    <div class="flex-div">
+                        <div>
+                            <!-- Header Text -->
+                            <h1 class="display-3 text-center text-white">Take Your Small Business Mobile</h1>
+                            <p class="lead text-center text-white">We build powerful Mobile Apps at extremely affordable prices to help move your business forward.</p>
+                            
+                            <hr>
+                            
+                            <!-- If width is less than 375, hide it -->
+                            <div class="desktop-tablet-mode">
+                                <h3 class="text-center my-4 text-black">Select A Sample Mobile App To Preview</h3>
+                                
+                                <!-- Sample Mobile App Dropdown -->
+                                <div class="dropdown mb-4">
+                                    
+                                    <!-- Dropdown Button -->
+                                    <button class="btn btn-lg btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Barber Shop</button>
+                                    
+                                    <!-- Dropdown Menu -->
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" onclick="dropdownItemOnClick(0)" href="#">Barber Shop</a>
+                                        <a class="dropdown-item" onclick="dropdownItemOnClick(1)" href="#">Car Wash</a>
+                                        <a class="dropdown-item" onclick="dropdownItemOnClick(2)" href="#">Church</a>
+                                        <a class="dropdown-item" onclick="dropdownItemOnClick(3)" href="#">Hair Salon</a>
+                                        <a class="dropdown-item" onclick="dropdownItemOnClick(4)" href="#">Pet Services</a>
+                                        <a class="dropdown-item" onclick="dropdownItemOnClick(5)" href="#">Restaurant</a>
+                                        <a class="dropdown-item" onclick="dropdownItemOnClick(6)" href="#">Spa/Massage</a>
+                                    </div>
+                                    
+                                    <!-- Dropdown Script -->
+                                    <script>
+                                        function dropdownItemOnClick(index) {
+                                            let sampleAppsNames = ["Barber Shop", "Car Wash", "Church", "Hair Salon", "Pet Services", "Restaurant", "Spa/Massage"];
+                                            let sampleAppsIds = ["d25d6cc2-944b-11e7-9bb5-0698b23e0a1a", "db246622-9772-11e7-9bb5-0698b23e0a1a", "2aa9a978-99ae-11e7-9bb5-0698b23e0a1a", "ac49081e-9a7a-11e7-9bb5-0698b23e0a1a", "85a8a77c-9852-11e7-9bb5-0698b23e0a1a", "f25ce22a-9c2d-11e7-9bb5-0698b23e0a1a", "fadbed46-95bc-11e7-9bb5-0698b23e0a1a"];
+                                            let url = "https://app.buildfire.com/app/index.html?appId=" + sampleAppsIds[index] + "&mode=0&stamp=1507870637246";
+                                            document.getElementById("iframeDemo").src = url;
+                                            document.getElementById("loader").style.visibility = "visible";
+                                            document.getElementById("dropdownMenuButton").innerText = sampleAppsNames[index];
+                                        }
+                                    </script>      
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Interactive Mobile App -->                                                    
+                <div class="col-lg">
+                    <div class="flex-div">
+                        <div>
+                            <!-- Img used in mobile mode -->
+                            <img class="mobile-mode zoomIn w-100 h-100" src="images/Three-Phones.png">
+                            
+                            <!-- Center iFrame -->
+                            <div class="text-center zoomIn desktop-tablet-mode">
+                                <!-- Interactive Mobile App -->
+                                <iframe id="iframeDemo" onload="iframeOnLoad()" seamless allowfullscreen sandbox="allow-scripts allow-forms allow-same-origin allow-popups" src="https://app.buildfire.com/app/index.html?appId=d25d6cc2-944b-11e7-9bb5-0698b23e0a1a&mode=0&stamp=1507870637246"></iframe>
+                                
+                                <!-- Loader -->
+                                <div id="loader" class="loader"></div>
+                                
+                                <!-- Hide Loader Script -->
+                                <script>
+                                    function iframeOnLoad() {
+                                        document.getElementById("loader").style.visibility = "hidden";
+                                    }
+                                </script>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <!-- Why Go Mobile? section -->
+    <div class="container" id="why-go-mobile-section">
+        <!-- Why Go Mobile? -->
+        <h1 class="display-4 text-center my-4">Why Go Mobile?</h1>
+        <p class="text-center">Everyone is going mobile. Reach people instantly on the devices they use every day.</p>
+        <hr width="200px">
+        <p class="text-center"><a class="btn btn-primary btn-lg" href="pricing.html">See Pricing</a></p>
+        
+        <!-- Why Go Mobile Answers -->
+        <div class="row">
+            <div class="col-sm-3 my-4">
+                <p class="text-center"><img class="w-100 h-100" src="images/smart-phone.png" alt=""></p>
+                <h1 class="h3 text-center">97% Of Adults Own A Smart Phone</h1>
+            </div>
+            
+            <div class="col-sm-3 my-4">
+                <p class="text-center"><img class="w-100 h-100" src="images/keep-coming-back.png" alt=""></p>
+                <h1 class="h3 text-center">Keep Customers Coming Back With Coupons &amp; Loyalty Program</h1>
+            </div>
+            
+            <div class="col-sm-3 my-4">
+                <p class="text-center"><img class="w-100 h-100" src="images/push-notifications.png" alt=""></p>
+                <h1 class="h3 text-center mb-4">Directly &amp; Instantly Message Customers Using Push Notifications</h1>
+            </div>
+            
+            <div class="col-sm-3 my-4">
+                <p class="text-center"><img class="w-100 h-100" src="images/boost-sales.png" alt=""></p>
+                <h1 class="h3 text-center mb-4">Boost Sales By Having A Mobile App</h1>
+            </div>
+        </div>        
+    </div>
+    
+    <!-- Amazing Features section -->
+    <div class="container-fluid" id="amazing-features-section">
+        <div class="container">
+            <!-- Amazing Features -->
+            <h1 class="display-4 text-center my-4">Amazing Features</h1>
+            <p class="text-center">We offer a ton of great features to enhance your business and connection with your customers.</p>
+            <hr width="200px">
+            <p class="text-center"><a class="btn btn-primary btn-lg" href="features.html">See Features</a></p>
+            
+            <!-- Easy Customization, Automatic Updates, Lifetime Support-->
+            <div class="row">
+                <!-- Easy Customization -->
+                <div class="col-sm-4 my-4">
+                    <div class="row">
+                        <div class="col-sm-2 text-center amazing-feature-icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        
+                        <div class="col-sm-10 amazing-feature-text">
+                            <h1 class="h4">Easy Customization</h1>
+                            <p>We make it easy for you to customize your Mobile App on the fly by providing you an online dashboard.</p>                        
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Automatic Updates -->
+                <div class="col-sm-4 my-4">
+                    <div class="row">
+                        <div class="col-sm-2 text-center amazing-feature-icon"><i class="fa fa-cloud" aria-hidden="true"></i></div>
+                        
+                        <div class="col-sm-10 amazing-feature-text">
+                            <h1 class="h4">Automatic Updates</h1>
+                            <p>We consistently update your Mobile App with the latest technologies and at no extra cost to you.</p>                        
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Lifetime Support -->
+                <div class="col-sm-4 my-4">
+                    <div class="row">
+                        <div class="col-sm-2 text-center amazing-feature-icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                        
+                        <div class="col-sm-10 amazing-feature-text">
+                            <h1 class="h4">Lifetime Support</h1>
+                            <p>Our goal is to make your business grow. We will always be there for you and help you every step of the way in achieving this goal.</p>                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Push Notifications, Loyalty Program, Coupons -->
+            <div class="row">
+                <!-- Push Notifications -->
+                <div class="col-sm-4 my-4">
+                    <div class="row">
+                        <div class="col-sm-2 text-center amazing-feature-icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                        
+                        <div class="col-sm-10 amazing-feature-text">
+                            <h1 class="h4">Push Notifications</h1>
+                            <p>Directly and instantly send any message to your customers' mobile phones through the use of Push Notifications.</p>                        
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Loyalty Program -->
+                <div class="col-sm-4 my-4">
+                    <div class="row">
+                        <div class="col-sm-2 text-center amazing-feature-icon"><i class="fa fa-gift" aria-hidden="true"></i></div>
+                        
+                        <div class="col-sm-10 amazing-feature-text">
+                            <h1 class="h4">Loyalty Program</h1>
+                            <p>Reward customers with points every time they spend money. Your customers can use these points to redeem rewards directly through your Mobile App. You can create as many rewards as you'd like!</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Coupons -->
+                <div class="col-sm-4 my-4">
+                    <div class="row">
+                        <div class="col-sm-2 text-center amazing-feature-icon"><i class="fa fa-barcode" aria-hidden="true"></i></div>
+                        
+                        <div class="col-sm-10 amazing-feature-text">
+                            <h1 class="h4">Coupons</h1>
+                            <p>Make it easier for your customers to spend money by offering them coupons directly through your Mobile App. You can create as many coupons as you'd like!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mobile Booking, Mobile Ordering, Monetization -->
+            <div class="row">
+                <!-- Mobile Booking -->
+                <div class="col-sm-4 my-4">
+                    <div class="row">
+                        <div class="col-sm-2 text-center amazing-feature-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+                        
+                        <div class="col-sm-10 amazing-feature-text">
+                            <h1 class="h4">Mobile Booking</h1>
+                            <p>Allow your customers to book your services or make reservations directly through your Mobile App. You can also accept mobile payments for bookings and reservations.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 my-4">
+                    <div class="row">
+                        <div class="col-sm-2 text-center amazing-feature-icon"><i class="fa fa-mobile" aria-hidden="true"></i></div>
+                        
+                        <div class="col-sm-10 amazing-feature-text">
+                            <h1 class="h4">Mobile Ordering</h1>
+                            <p>Allow your customers to place takeout or delivery orders directly through your Mobile App. You can also integrate online ordering services that you already use directly into your Mobile App.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Monetization -->
+                <div class="col-sm-4 my-4">
+                    <div class="row">
+                        <div class="col-sm-2 text-center amazing-feature-icon"><i class="fa fa-money" aria-hidden="true"></i></div>
+                        
+                        <div class="col-sm-10 amazing-feature-text">
+                            <h1 class="h4">Monetization</h1>
+                            <p>Generate revenue through your Mobile App by selling premium content, charging for your app, selling products, selling memberships, or whatever you'd like!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Build Your Mobile App Now -->
+    <div class="container" id="build-your-mobile-app-now-section">
+        <div class="row">
+            <!-- Text -->
+            <div class="col-sm-6 mb-4">
+                <div class="flex-div">
+                    <div>
+                        <h1 class="display-4 text-center my-4">Let's Start Building</h1>
+                        <p class="text-center">Get in touch with us today in order to begin the process of building your Mobile App. Check out our <a href="pricing.html">pricing</a> if you have any questions.</p>
+                        <p class="text-center"><a class="btn btn-primary btn-lg" href="https://quickbudgetapps.typeform.com/to/Wx6U37">Build Your Mobile App</a></p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Two iPhones image -->
+            <div class="col-sm-6 text-center"><p class="m-0"><img class="mh-100 mw-100" src="images/two-iphones.png"></p></div>
+        </div>
     </div>
 
-  </body>
+    <!-- Footer -->
+    <footer class="py-5">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Quick Budget Apps 2017</p>
+        </div>
+    </footer>
+</body>
+    
 </html>
