@@ -81,6 +81,11 @@ p {
     padding-bottom: 25px;
 }
 
+.why-go-mobile-image {
+    width: 200px;
+    height: 200px;
+}
+
 #amazing-features-section {
     background-color: #f8fbfd;
     padding-top: 25px;
