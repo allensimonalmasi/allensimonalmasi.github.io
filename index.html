@@ -87,18 +87,23 @@
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                         <a class="dropdown-item" onclick="dropdownItemOnClick(0)" href="#">Barber Shop</a>
                                         <a class="dropdown-item" onclick="dropdownItemOnClick(1)" href="#">Car Wash</a>
-                                        <a class="dropdown-item" onclick="dropdownItemOnClick(2)" href="#">Church</a>
-                                        <a class="dropdown-item" onclick="dropdownItemOnClick(3)" href="#">Hair Salon</a>
-                                        <a class="dropdown-item" onclick="dropdownItemOnClick(4)" href="#">Pet Services</a>
-                                        <a class="dropdown-item" onclick="dropdownItemOnClick(5)" href="#">Restaurant</a>
-                                        <a class="dropdown-item" onclick="dropdownItemOnClick(6)" href="#">Spa/Massage</a>
+                                        <a class="dropdown-item" onclick="dropdownItemOnClick(2)" href="#">Chiropractors</a>
+                                        <a class="dropdown-item" onclick="dropdownItemOnClick(3)" href="#">Church</a>
+                                        <a class="dropdown-item" onclick="dropdownItemOnClick(4)" href="#">Dermatologists</a>
+                                        <a class="dropdown-item" onclick="dropdownItemOnClick(5)" href="#">Hair Salon</a>
+                                        <a class="dropdown-item" onclick="dropdownItemOnClick(6)" href="#">Laser Clinic</a>
+                                        <a class="dropdown-item" onclick="dropdownItemOnClick(7)" href="#">Nail Salon</a>
+                                        <a class="dropdown-item" onclick="dropdownItemOnClick(8)" href="#">Pet Services</a>
+                                        <a class="dropdown-item" onclick="dropdownItemOnClick(9)" href="#">Restaurant</a>
+                                        <a class="dropdown-item" onclick="dropdownItemOnClick(10)" href="#">Spa/Massage</a>
+                                        <a class="dropdown-item" onclick="dropdownItemOnClick(11)" href="#">Tanning Salon</a>
                                     </div>
                                     
                                     <!-- Dropdown Script -->
                                     <script>
                                         function dropdownItemOnClick(index) {
-                                            let sampleAppsNames = ["Barber Shop", "Car Wash", "Church", "Hair Salon", "Pet Services", "Restaurant", "Spa/Massage"];
-                                            let sampleAppsIds = ["d25d6cc2-944b-11e7-9bb5-0698b23e0a1a", "db246622-9772-11e7-9bb5-0698b23e0a1a", "2aa9a978-99ae-11e7-9bb5-0698b23e0a1a", "ac49081e-9a7a-11e7-9bb5-0698b23e0a1a", "85a8a77c-9852-11e7-9bb5-0698b23e0a1a", "f25ce22a-9c2d-11e7-9bb5-0698b23e0a1a", "fadbed46-95bc-11e7-9bb5-0698b23e0a1a"];
+                                            let sampleAppsNames = ["Barber Shop", "Car Wash", "Chiropractors", "Church", "Dermatologists", "Hair Salon", "Laser Clinic", "Nail Salon", "Pet Services", "Restaurant", "Spa/Massage", "Tanning Salon"];
+                                            let sampleAppsIds = ["d25d6cc2-944b-11e7-9bb5-0698b23e0a1a", "db246622-9772-11e7-9bb5-0698b23e0a1a", "18fb4a95-b6ee-11e7-9bb5-0698b23e0a1a", "2aa9a978-99ae-11e7-9bb5-0698b23e0a1a", "a9f4a4fe-b69f-11e7-9bb5-0698b23e0a1a", "ac49081e-9a7a-11e7-9bb5-0698b23e0a1a", "4693e19d-b3bb-11e7-9bb5-0698b23e0a1a", "81944d69-99c9-11e7-9bb5-0698b23e0a1a", "85a8a77c-9852-11e7-9bb5-0698b23e0a1a", "f25ce22a-9c2d-11e7-9bb5-0698b23e0a1a", "fadbed46-95bc-11e7-9bb5-0698b23e0a1a", "ef07f7b7-b78d-11e7-9bb5-0698b23e0a1a"];
                                             let url = "https://app.buildfire.com/app/index.html?appId=" + sampleAppsIds[index] + "&mode=0&stamp=1507870637246";
                                             document.getElementById("iframeDemo").src = url;
                                             document.getElementById("loader").style.visibility = "visible";
