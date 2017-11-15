@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Quick Budget Apps builds powerful Mobile Apps for small businesses at affordable prices.">
+    <meta name="author" content="Quick Budget Apps">
+
+    <title>Quick Budget Apps | Demo</title>
+    
+    <!-- Force no cache -->
+    <meta http-equiv="cache-control" content="max-age=0, no-cache, no-store, must-revalidate"/>
+    <meta http-equiv="expires" content="0"/>
+    <meta http-equiv="pragma" content="no-cache"/>
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico?v=2"/>
+
+    <!-- Third party scripts and styles -->
+    <link rel="stylesheet" href="third-party-styles-and-scripts/bootstrap.min.css">
+    <link rel="stylesheet" href="third-party-styles-and-scripts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="third-party-styles-and-scripts/jquery-3.1.1.js"></script>
+    <script src="third-party-styles-and-scripts/tether.min.js"></script>
+    <script src="third-party-styles-and-scripts/bootstrap.min.js"></script>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <!-- Styles -->
+    <link href="demo.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>        
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <p>
+                    <!-- Interactive Mobile App -->
+                    <iframe id="iframeDemo" onload="iframeOnLoad()" seamless allowfullscreen sandbox="allow-scripts allow-forms allow-same-origin allow-popups" src=""></iframe>
+                                
+                    <!-- Load Mobile App Script -->
+                    <script>
+                        let queryString = window.location.search.replace("?app=", "");
+                        let sampleAppsNames = ["Barber_Shop", "Car_Wash", "Chiropractors", "Church", "Dermatologists", "Hair_Salon", "Laser_Clinic", "Nail_Salon", "Pet_Services", "Restaurant", "Spa/Massage", "Tanning_Salon"];
+                        let sampleAppsIds = ["d25d6cc2-944b-11e7-9bb5-0698b23e0a1a", "db246622-9772-11e7-9bb5-0698b23e0a1a", "18fb4a95-b6ee-11e7-9bb5-0698b23e0a1a", "2aa9a978-99ae-11e7-9bb5-0698b23e0a1a", "a9f4a4fe-b69f-11e7-9bb5-0698b23e0a1a", "ac49081e-9a7a-11e7-9bb5-0698b23e0a1a", "4693e19d-b3bb-11e7-9bb5-0698b23e0a1a", "81944d69-99c9-11e7-9bb5-0698b23e0a1a", "85a8a77c-9852-11e7-9bb5-0698b23e0a1a", "f25ce22a-9c2d-11e7-9bb5-0698b23e0a1a", "fadbed46-95bc-11e7-9bb5-0698b23e0a1a", "ef07f7b7-b78d-11e7-9bb5-0698b23e0a1a"];
+                        
+                        // Find index
+                        let index = 0;
+                        for (let i = 0; i < sampleAppsNames.length; ++i) {
+                            if (queryString == sampleAppsNames[i]) {
+                                index = i;
+                                break;
+                            }
+                        }
+                        
+                        // Set index
+                        let url = "https://app.buildfire.com/app/index.html?appId=" + sampleAppsIds[index] + "&mode=0&stamp=1507870637246";
+                        document.getElementById("iframeDemo").src = url;
+                    </script>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+    
+</html>
