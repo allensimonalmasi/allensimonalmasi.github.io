@@ -2,83 +2,21 @@ p {
     text-align: justify;
 }
 
-.desktop-tablet-mode {
-    display: block;
-}
-
-.mobile-mode {
-    display: none;
-}
-
-@media (max-width: 375px) {
-    .desktop-tablet-mode {
-        display: none;
-    }
-    
-    .mobile-mode {
-        display: block;
-    }
-}
-
-#header {
-    padding: 0;
-    padding-top: 50px;
-    padding-bottom: 50px;
+.jumbotron {
+    border-radius: 0;
+    margin-bottom: 0;
     background: linear-gradient(45deg,#7c3581 5%,#e26047 50%,#e99343 90%);
     background-image: linear-gradient(45deg, rgb(124, 53, 129) 5%, rgb(226, 96, 71) 50%, rgb(233, 147, 67) 90%);
-}
-
-#dropdownMenuButton {
-    position: relative;
-    width: 300px;
-    left: calc((100% - 300px) / 2);
-}
-
-.dropdown-menu {
-    left: calc((100% - 300px) / 2);
-}
-
-#iframeDemo {
-    width: 344px;
-    height: 694px;
-    
-    border: 2px solid #ddd;
-    border-radius: 45px;
-    padding: 55px 12px;
-    background: black;
-    
-    -webkit-box-shadow: 0px 10px 12px -2px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 10px 12px -2px rgba(0,0,0,0.75);
-    box-shadow: 0px 10px 12px -2px rgba(0,0,0,0.75);
-}
-
-.loader {
-    position: absolute;
-    top: calc((100% - 50px)/ 2);
-    right: calc((100% - 50px)/ 2);
-
-    border: 5px solid #f3f3f3;
-    -webkit-animation: spin 1s linear infinite;
-    animation: spin 1s linear infinite;
-    border-top: 5px solid #555;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-}
-
-@-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    background-size: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
 }
 
 #why-go-mobile-section {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .why-go-mobile-image {
@@ -88,8 +26,8 @@ p {
 
 #amazing-features-section {
     background-color: #f8fbfd;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .amazing-feature-icon {
@@ -109,5 +47,5 @@ p {
 }
 
 #build-your-mobile-app-now-section {
-    padding-top: 25px;
+    padding-top: 32px;
 }
