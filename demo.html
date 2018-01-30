@@ -42,12 +42,13 @@
                                 
                     <!-- Load Mobile App Script -->
                     <script>
+                        let url;
                         let queryString = window.location.search.replace("?app=", "");
                         let sampleAppsNames = ["Barber_Shop", "Car_Wash", "Chiropractors", "Church", "Dermatologists", "Hair_Salon", "Laser_Clinic", "Nail_Salon", "Pet_Services", "Restaurant", "Spa/Massage", "Tanning_Salon"];
                         let sampleAppsIds = ["d25d6cc2-944b-11e7-9bb5-0698b23e0a1a", "db246622-9772-11e7-9bb5-0698b23e0a1a", "18fb4a95-b6ee-11e7-9bb5-0698b23e0a1a", "2aa9a978-99ae-11e7-9bb5-0698b23e0a1a", "a9f4a4fe-b69f-11e7-9bb5-0698b23e0a1a", "ac49081e-9a7a-11e7-9bb5-0698b23e0a1a", "4693e19d-b3bb-11e7-9bb5-0698b23e0a1a", "81944d69-99c9-11e7-9bb5-0698b23e0a1a", "85a8a77c-9852-11e7-9bb5-0698b23e0a1a", "f25ce22a-9c2d-11e7-9bb5-0698b23e0a1a", "fadbed46-95bc-11e7-9bb5-0698b23e0a1a", "ef07f7b7-b78d-11e7-9bb5-0698b23e0a1a"];
                         
                         // Find index
-                        let index = 0;
+                        let index = -1;
                         for (let i = 0; i < sampleAppsNames.length; ++i) {
                             if (queryString == sampleAppsNames[i]) {
                                 index = i;
@@ -56,7 +57,12 @@
                         }
                         
                         // Set index
-                        let url = "https://app.buildfire.com/app/index.html?appId=" + sampleAppsIds[index] + "&mode=0&stamp=1507870637246";
+                        if (index != -1)
+                            url = "https://app.buildfire.com/app/index.html?appId=" + sampleAppsIds[index] + "&mode=0&stamp=1507870637246";
+                        else
+                            url = "https://app.buildfire.com/app/index.html?appId=" + queryString + "&mode=0&stamp=1507870637246";
+                        
+                        // Set url
                         document.getElementById("iframeDemo").src = url;
                     </script>
                 </p>
