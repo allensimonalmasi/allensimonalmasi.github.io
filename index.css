@@ -75,6 +75,7 @@ p {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+
 #why-go-mobile-section {
     padding-top: 32px;
     padding-bottom: 32px;
